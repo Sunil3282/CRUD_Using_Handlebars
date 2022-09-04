@@ -1,0 +1,26 @@
+<h1>Edit User</h1>
+<form class="row g-3" action="/update/{{user.id}}" method="post" >
+    <div class="col-md-6">
+        <label for="inputPassword5" class="form-label">firstName</label>
+        <input type="string" id="inputPassword5"  name= "FirstName" value="{{user.FirstName}}" class="form-control" require>
+    </div>
+
+    <div class="col-md-6">
+        <label for="inputPassword5" class="form-label">lastName</label>
+        <input type="string" id="inputPassword5"  name= "LastName" value="{{user.LastName}}" class="form-control" require>
+    </div>
+
+  <div class="col-md-6">
+    <label for="inputEmail4" class="form-label">Email</label>
+    <input type="email" class="form-control" name = "email" value="{{user.email}}" id="inputEmail4">
+  </div>
+  <div class="col-md-6">
+        <label for="inputPassword5" class="form-label">phone</label>
+        <input type="integer" id="inputPassword5"  name= "phone" value="{{user.phone}}" class="form-control" require>
+    </div>
+  
+  
+  <div class="col-12">
+    <button type="submit" name="submit" class="btn btn-primary">Update</button>
+  </div>
+</form>
